@@ -218,3 +218,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# NYU CTF Bench data cloned locally by the dataset module
+.ctf-data/
+.nyuctf/
+
+# Isolated Python environment for Dataset, Docker & Evaluation work
+.venv-dataset/
+.tmp/
+
+# Local evaluation output and Python caches
+dataset/runs/
+dataset/logs/
+
+# Local secrets and private dataset metadata must never be committed
+/keys.cfg
+*.flags.json

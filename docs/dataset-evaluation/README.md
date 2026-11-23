@@ -186,7 +186,8 @@ Không test nào dùng flag thật, dataset thật, Docker, Agent, hoặc API.
 
 Khi WSL2 được chủ máy cấp quyền, checkout chỉ được đặt trong Linux filesystem
 (ví dụ `~/ctf-data`), không phải `/mnt/c` hay `/mnt/d` NTFS vì NYU repository
-có filename Windows không checkout được. Quy trình Mốc 2A đã xác minh:
+có filename Windows không checkout được. Venv/package đã xác minh; các lệnh
+checkout chính thức sau vẫn cần được chạy và xác minh trên Linux:
 
 ```bash
 python3 -m venv .venv-dataset
